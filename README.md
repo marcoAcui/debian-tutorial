@@ -1,6 +1,6 @@
 ## Requisitos:
 
-- [Debian 12 versión netinst.iso](https://cd/images/image.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso) (ocupa internet para la instalación)
+- [Debian 12 versión netinst.iso](https://www.debian.org/CD/netinst/) (ocupa internet para la instalación)
 - 1 servidor con Mouse, Teclado, Monitor conectados y funcionales (tutorial realizado en maquina virtual)
 - 1 conexión a internet
 - [Esta pagina para la instalación de Apache, MariaDB y PHP](https://wiki.debian.org/LaMp)
