@@ -157,6 +157,65 @@ Se hara la configuración de red de manera automatica si se tiene una conexión 
 11. (OPCIONAL) Doble click izquierdo en la barra gris de la terminal para que sea pantalla completa
     ![Terminal](/images/image-38.png)
 
+
+### Configuración de IP estática
+
+1. Haz click en los íconos de estado de la esquina superior derecha para delplegar el menú. Posteriormente haz click en la flecha de la derecha del adaptador de red para desplegar el menú de la red.
+
+![Settings](/images/IPestatica-1.png)
+
+2. Selecciona la opción "Wired Settings" para acceder a la configuración de red.
+
+![Settings](/images/IPestatica-2.png)
+
+3. Haz click en el ícono de engrane ⚙️ de la interfaz de red que deseas configurar.
+
+![Settings](/images/IPestatica-3.png)
+
+4. Aqui podemos ver los detalles de la conexión a la red. Algunos datos que nececitamos son la Dirección IPv4 y la Ruta predeterminada.
+
+![Settings](/images/IPestatica-4.png)
+
+5. Ve al apartado IPv4 y selecciona la opción de Método IPv4 "Manual". Posteriormente, en Direcciones, escribe la dirección IPv4 que tenía antes, con la diferencia que la ultima parte de la dirección se cambia por 138. En la Puerta de enlace se escribe la Ruta predeterminada que se obtuvo antes.
+
+![Settings](/images/IPestatica-5.png)
+
+6. Para obtener la Mascara de subred tenemos que ir a una terminal y ejecutar el comando "ip addr show". De esta forma nos mostrará información más detellada de la interfaz de red. Al final de la dirección IPv4 se encuentra separado con una diagonal (/) la máscara de subred en notación simplificada.
+
+![Settings](/images/IPestatica-6.png)
+
+Para obtener la mascara de subred en notación decimal puede utilizar la siguiente tabla:
+
+| Notación Simplificada | En decimal      |
+|-----------------------|-----------------|
+| /8                    | 255.0.0.0       |
+| /9                    | 255.128.0.0     |
+| /10                   | 255.192.0.0     |
+| /11                   | 255.224.0.0     |
+| /12                   | 255.240.0.0     |
+| /13                   | 255.248.0.0     |
+| /14                   | 255.252.0.0     |
+| /15                   | 255.255.0.0     |
+| /16                   | 255.255.0.0     |
+| /17                   | 255.255.128.0   |
+| /18                   | 255.255.192.0   |
+| /19                   | 255.255.224.0   |
+| /20                   | 255.255.240.0   |
+| /21                   | 255.255.248.0   |
+| /22                   | 255.255.252.0   |
+| /23                   | 255.255.254.0   |
+| /24                   | 255.255.255.0   |
+| /25                   | 255.255.255.128 |
+| /26                   | 255.255.255.192 |
+| /27                   | 255.255.255.224 |
+| /28                   | 255.255.255.240 |
+| /29                   | 255.255.255.248 |
+| /30                   | 255.255.255.252 |
+
+7. Una vez hecha esta configuración haz click en Aplicar y reinicia la interfaz de red con el switch.
+
+![Settings](/images/IPestatica-7.png)
+
 ### Actualización de paquetes
 
 En la terminal:
